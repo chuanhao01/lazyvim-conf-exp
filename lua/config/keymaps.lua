@@ -30,3 +30,6 @@ unmap("t", "<C-h>") -- Go to left window
 unmap("t", "<C-j>") -- Go to lower window
 unmap("t", "<C-k>") -- Go to upper window
 unmap("t", "<C-l>") -- Go to right window
+
+-- Leader Terminal
+map("n", "<leader>t", "<cmd>terminal<cr>", { desc = "Creates a terminal buffer" })
