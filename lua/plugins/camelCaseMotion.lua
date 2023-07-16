@@ -4,5 +4,6 @@ return {
     init = function()
       vim.g.camelcasemotion_key = "\\"
     end,
+    vscode = true,
   },
 }
