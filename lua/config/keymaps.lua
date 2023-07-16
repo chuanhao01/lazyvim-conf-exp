@@ -32,4 +32,7 @@ unmap("t", "<C-k>") -- Go to upper window
 unmap("t", "<C-l>") -- Go to right window
 
 -- Leader Terminal
-map("n", "<leader>t", "<cmd>terminal<cr>", { desc = "Creates a terminal buffer" })
+local lazyterm = function()
+  Util.float_term(nil, { cwd = Util.get_root() })
+end
+map("n", "<leader>t", lazyterm, { desc = "Creates a terminal buffer" })
